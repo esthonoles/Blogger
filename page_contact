@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AboutMe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css"
+    />
+  </head>
+  <body>
+    <div class="about-container">
+      <div class="profile-image">
+        <img src="https://1.bp.blogspot.com/-Wj7jkwyCRbU/YREzJje4qnI/AAAAAAAABxQ/OtRzT-1Z-x42oL-vZzqk5K9NcHVGE-jHACLcBGAsYHQ/s2048/bannena.jpg" alt="" />
+      </div>
+
+      <div class="description">
+        <p>
+          Hanya Seorang Blogger yang berasal dari pulau kecil (Bawean), yang berada di provinsi jawa timur, sekarang masih aktif kuliah di Universitas Pamulang Jurusan Teknik Informatika, adapun kegiatan blogging hanya sekedar mengisi waktu luang.
+        </p>
+        <p>
+          jadi mohon maaf apabila dalam penulisan blog banyak yang kurang jelas karena memang saya masih harus masih banyak belajar lagi heheh,,,,,
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <div class="project">
+          <h3 class="project-name">Total Post</h3>
+          <div class="project-number odometer websites-designed">0</div>
+        </div>
+      </div>
+      </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+    <script>
+      const websitesDesigned = document.querySelector(".websites-designed");
+
+      setTimeout(() => {
+        websitesDesigned.innerHTML = "75";
+      }, 400);
+    </script>
+  </body>
+</html>
+
+
+<style> 
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-container p {
+  line-height: 2;
+  padding: 0 20px;
+}
+
+.about-container .profile-image {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-container .profile-image img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 8px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+  margin: 24px auto;
+  border-radius: 20px;
+}
+
+.projects-container .project {
+  height: 160px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.projects-container .project-name {
+  font-size: 16px;
+}
+
+.projects-container .project-number {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.about-container .our-mission {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.about-container .our-mission .quote-icon {
+  position: absolute;
+  opacity: 0.2;
+  height: 80px;
+}
+
+.about-container .our-mission p {
+  margin-left: 100px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .our-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-team img {
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+
+</style>
