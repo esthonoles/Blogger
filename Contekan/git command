@@ -1,0 +1,69 @@
+			--- Contekan Git ---
+
+url   : git-scm.com
+ebook : git-scm.com/book/id/v2 || git-scm.com/bootk/en/v2
+
+
+Git command local
+
+$ git init	# initial local repo dikomputer kita
+$ git add	# menambahkan file kedalam stagging area
+$ git status	# untuk mengetahui status repo kita
+$ git commit	# untuk melakukan commit
+$ git config	# untuk masukin konfigurasi kedalam git
+$ git branch	# untuk membuat branc (cabang)
+$ git help	
+
+
+
+
+3 Area pada repo Git
+
+# Working Tree		# Stagging Area		# History
+
+
+$ git add <filename>	--menyimpan perubahan kedalam stagging area
+
+$ git commit 	--menyimpan perubahan dari stagging ke dalam history
+
+# untuk commit pertamakali gunakan (gunakan akun github) biar koneksinya gampang cuy!!
+
+$ git config --global user.email "email@example.com"
+$ git config --global user.name "username"
+------------------------------------------------------------
+
+# commit minimalis
+$ git commit -m "pesannya disini gan!!"
+
+$ git commit -am "pesan"
+
+# Melihat log dari commit yang telah dilakukan
+
+$ git log
+
+# menampilkan visualisasi branch dalam bentuk graph
+$ git log --all --decorate --online --graph 
+
+-- Alias 
+$ alias graph="git log --all --decorate --online --graph"
+
+# Untuk pindah branch
+$ git checkout <nama branch>
+
+
+		*** GIT REMOTE ***
+$ git push	#mengirim perubahan ke GitHub
+
+# memindahkan local repo ke Github
+- membuat repositori di Github terlebih dahulu
+
+# remote ke akun GitHub
+$ git remote add origin <url repo github>
+$ git push -U origin master
+
+		
+		** Kasus ketiga **
+$ git fetch 	# untuk cek commit yang ada di repo
+$ git pull	
+
+ 
